@@ -104,6 +104,20 @@ p users["Erik"][:pets][4]
 
 # 10. Add another person to the users hash
 
-users["Sam"] = "I am Sam"
+users["Sam"] = {
+    twitter: "samcassie",
+    lottery_numbers: [18,35,2,18],
+    home_town: "Glasgow",
+    pets: [
+        {
+        name: "Max",
+        species: "cat"
+        },
+        {
+        name: "Tam",
+        species: "cat"
+        }
+    ]
+}
 
-p users.keys
+p users
